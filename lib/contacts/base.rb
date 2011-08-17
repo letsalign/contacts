@@ -212,11 +212,7 @@ class Contacts
   
   def self.guess(login, password, options={})
     TYPES.inject([]) do |a, t|
-      begin
         a + t[1].new(login, password, options).contacts
-      rescue AuthenticationError
-        a
-      end
     end.uniq
   end
 end
