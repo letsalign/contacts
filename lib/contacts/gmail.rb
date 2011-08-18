@@ -26,7 +26,7 @@ class Contacts
       @contacts.compact!
    # rescue GData::Client::AuthorizationError => e
     #  raise AuthenticationError, "Username or password are incorrect"
-    #end
+    end
     
     private
     
