@@ -24,9 +24,9 @@ class Contacts
         [title, email] unless email.nil?
       end
       @contacts.compact!
-    rescue GData::Client::AuthorizationError => e
-      raise AuthenticationError, "Username or password are incorrect"
-    end
+   # rescue GData::Client::AuthorizationError => e
+    #  raise AuthenticationError, "Username or password are incorrect"
+    #end
     
     private
     
